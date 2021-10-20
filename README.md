@@ -1,3 +1,10 @@
+# Customized JSON Resume Theme: Rocketspacer
+
+🖼️ This is a slightly tweaked version of the [Rocketspacer theme](https://github.com/rocketspacer/jsonresume-theme-rocketspacer). Tweaked to fit my design preferences. Published on NPM and GitHub Registry.
+
+<details>
+  <summary>Click to expand README.md of the source repository!</summary>
+
 # jsonresume-theme-rocketspacer
 
 [![node](https://img.shields.io/node/v/jsonresume-theme-rocketspacer.svg)](https://www.npmjs.com/package/jsonresume-theme-rocketspacer)
