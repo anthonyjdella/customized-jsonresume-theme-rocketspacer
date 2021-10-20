@@ -1,10 +1,10 @@
 <%
 /**
  * @typedef {object} Work
- * @property {string} company Work company
+ * @property {string} name Work name
  * @property {string} startDate Work startDate
  * @property {string} endDate Work endDate
- * @property {string} website Work company website
+ * @property {string} url Work name url
  * @property {string} position Work position
  * @property {string} summary Work summary
  * @property {array.<string>} highlights Work highlights
@@ -24,14 +24,15 @@
         <% work.forEach((w) => { %>
           <div class="col-sm-12">
             <h4 class="strike-through">
-              <span><%= w.company %></span>
+              <span><%= w.name %></span>
               <span class="date">
-                <%= this.prettyDate(w.startDate) %> — <%= this.prettyDate(w.endDate) || 'Now' %>
+                <% if (w.endDate != 'present') { %>
+                  <%= this.prettyDate(w.startDate) %> — <%= this.prettyDate(w.endDate) || 'Now' %>
+                <% } else { %>
+                  <%= this.prettyDate(w.startDate) %> — <%= this.presentDate(w.endDate) || 'Now' %>
+                <% } %>
               </span>
             </h4>
-            <div class="website pull-right">
-              <a target="_blank" href="<%= w.website %>"><%= w.website %></a>
-            </div>
             <div class="position">
               <%= w.position %>
             </div>
@@ -39,7 +40,6 @@
               <p><%= w.summary %></p>
             </div>
             <% if (w.highlights && Array.isArray(w.highlights) && w.highlights.length > 0) { %>
-              <p><strong>Highlights</strong></p>
               <ul class="highlights">
                 <% w.highlights.forEach((h) => { %>
                   <li class="bullet"><%= h %></li>

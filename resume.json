@@ -1,201 +1,189 @@
 {
+  "$schema": "https://raw.githubusercontent.com/anthonyjdella/customized-resume-schema/main/schema.json",
   "basics": {
-    "name": "John Doe",
-    "label": "Software Engineer, Backend Development",
-    "picture": "dummy-profile.png",
-    "email": "john.doe@gmail.com",
-    "phone": "(+1) 234-567-8910",
-    "website": "https://john.doe",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "GitHub",
-        "username": "johndoe",
-        "url": "https://github.com/johndoe"
+      "name": "Anthony Dellavecchia",
+      "label": "Software Engineer and Creative Technologist",
+      "image": "https://www.anthonydellavecchia.com/images/contact/avatar2.png",
+      "email": "anthony.dellavecchia.tech@gmail.com",
+      "phone": "(940) 242-1288",
+      "summary": "5+ years of experience in full-stack software development. Interested in solving technical challenges, mastering data structures & algorithms, software engineering, problem solving, open-source, user experience design, and continuous improvement.",
+      "location": {
+          "countryCode": "US",
+          "address": "Dallas, Texas"
       },
-      {
-        "network": "StackOverflow",
-        "username": "johndoe",
-        "url": "https://stackoverflow.com/users/johndoe"
-      },
-      {
-        "network": "Facebook",
-        "username": "John Doe",
-        "url": "https://www.facebook.com/johndoe"
-      }
-    ]
+      "profiles": [
+          {
+              "network": "LinkedIn",
+              "username": "anthonydellavecchia",
+              "url": "https://www.linkedin.com/in/anthonydellavecchia/"
+          },
+          {
+              "network": "Twitter",
+              "username": "anthonyjdella",
+              "url": "https://twitter.com/anthonyjdella"
+          },
+          {
+              "network": "GitHub",
+              "username": "anthonyjdella",
+              "url": "https://github.com/anthonyjdella"
+          }
+      ],
+      "website": "https://www.anthonydellavecchia.com"
   },
   "work": [
-    {
-      "company": "Google",
-      "position": "Software Engineer 1",
-      "website": "https://google.com",
-      "startDate": "2017-09-01",
-      "summary": "Help building components of the Foo system",
-      "highlights": [
-        "Awarded 'Employee of the Month'",
-        "Optimize computational cost by 10%"
-      ]
-    },
-    {
-      "company": "Microsoft",
-      "position": "Intern",
-      "website": "https://microsoft.com",
-      "startDate": "2015-05-01",
-      "endDate": "2015-08-01",
-      "summary": "Work here as an intern for the ABC project during summer"
-    }
+      {
+          "name": "State Farm \u00ae",
+          "position": "Software Developer",
+          "startDate": "2018-02-28",
+          "endDate": "present",
+          "highlights": [
+              "Backend: Develop, test, deploy, and maintain business-critical RESTful APIs using Java & Spring Boot framework that serves data and handles 100,000+ requests to our insurance policy platform, to prevent millions in monetary loss.",
+              "Integration Layer: Design and implement a microservice integration layer utilizing Java & Spring Boot to abstract components between our core application and outbound calls to high-impact business data, which help calculate insurance rates.",
+              "DevOps: Optimize software release efficiency up to 50% by creating CI/CD pipelines that automatically build, scan, test, and deploy software, which improves time-to-market.",
+              "Chaos Engineering: Reduce web service unplanned downtime by implementing Chaos Engineering tools to determine potential failure points, which saves time and costs.",
+              "Automation: Perform BDD using Agile methodology by writing automated E2E UI tests in CodeceptJS and Gherkin to quickly and effectively validate business scenarios.",
+              "Quality: Provide guidance and leadership to implement best practices and tools for optimizing team productivity, spearhead document creation of solution architecture, and create dashboards & reports for management."
+          ],
+          "summary": "",
+          "url": "https://www.linkedin.com/company/state_farm/",
+          "location": "Dallas, TX"
+      },
+      {
+          "name": "Bank of America",
+          "position": "Applications Programmer",
+          "startDate": "2017-01-31",
+          "endDate": "2018-02-28",
+          "highlights": [
+              "Frontend: Develop a frontend web application written in TypeScript, which manages customer banking appointments and 20,000+ associate schedules.",
+              "Troubleshooting: Collaborate with stakeholders and product teams to implement business requirements and resolve technical defects and bugs.",
+              "Metrics: Perform analysis on internal hiring data and create weekly reports for senior management to build teams based on skillsets and experience."
+          ],
+          "summary": "",
+          "url": "https://www.linkedin.com/company/bank-of-america/",
+          "location": "Dallas, TX"
+      },
+      {
+          "name": "GM Financial",
+          "position": "ETL Developer Intern",
+          "startDate": "2016-06-30",
+          "endDate": "2016-12-31",
+          "highlights": [
+              "ETL: Build data mapping transformations using ETL tools to extract, transform, and load data for various data warehouse projects.",
+              "Database: Execute SQL search queries to filter data subsets needed for staging and transformation.",
+              "Monitoring: Schedule, monitor, and configure automatic failure notifications for 700+ ETL workflows in production."
+          ],
+          "summary": "",
+          "url": "https://www.linkedin.com/company/gm-financial/",
+          "location": "Dallas, TX"
+      }
   ],
-  "volunteer": [
-    {
-      "organization": "Nerds movement",
-      "position": "Founder",
-      "website": "https://nerdsmovement.com",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Helping nerds around the world realize their true nature"
-    },
-    {
-      "organization": "Charity Funds",
-      "position": "Volunteer",
-      "website": "https://charityfunds.com",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Delivering help to people who needs it",
-      "highlights": [
-        "Bring food to 350 sick people in need of help"
-      ]
-    }
-  ],
+  "volunteer": [],
   "education": [
-    {
-      "institution": "MIT",
-      "area": "Artificial Intelligence",
-      "studyType": "Master",
-      "startDate": "2015-09-01",
-      "endDate": "2017-07-01"
-    },
-    {
-      "institution": "UC Berkeley",
-      "area": "Software Engineering",
-      "studyType": "Bachelor",
-      "startDate": "2011-09-01",
-      "endDate": "2015-07-01",
-      "gpa": "3.2 / 4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "BE8080 - Distributed Systems"
-      ]
-    }
+      {
+          "institution": "University of California, Los Angeles",
+          "area": "Engineering Management",
+          "studyType": "Master of Science",
+          "startDate": "2019-12-31",
+          "endDate": "2022-12-31",
+          "score": "3.71 GPA"
+      },
+      {
+          "institution": "The University of Texas at Dallas",
+          "area": "Information Technology and Systems",
+          "studyType": "Bachelor of Science",
+          "startDate": "2014-12-31",
+          "endDate": "2016-12-31",
+          "score": "Cum Laude, 3.66 GPA"
+      }
   ],
   "awards": [
-    {
-      "title": "Employee of the month",
-      "date": "2018-01-15",
-      "awarder": "Google",
-      "summary": "Awarded for outstanding working performance"
-    }
+      {
+          "title": "Cum Laude Honors",
+          "date": "2016-12-31",
+          "awarder": "The University of Texas at Dallas",
+          "summary": "Awarded to students with a GPA between 3.533 and 3.72, which also represents the top 15 percent of students, in Naveen Jindal School of Management."
+      },
+      {
+          "title": "Dean's List",
+          "date": "2014-12-31",
+          "awarder": "The University of Texas at Dallas",
+          "summary": "Achieved a 4.0 GPA during the semester. This award is for students with a GPA among the Top 10% in the Naveen Jindal School of Management.\n"
+      },
+      {
+          "title": "Comet Scholarship",
+          "date": "2014-09-30",
+          "awarder": "The University of Texas at Dallas",
+          "summary": "University scholarship awarded to select transfer students."
+      }
   ],
-  "publications": [
-    {
-      "name": "Optimizing artificial neural network",
-      "publisher": "Nature and Science journal",
-      "releaseDate": "2014-10-01",
-      "website": "http://publication.com",
-      "summary": "My publication on a new algorithm that speed up recognition in artificial neural network"
-    }
-  ],
-  "certifications": [
-    {
-      "name": "Solution Architect - Associate",
-      "issuingOrganization": "Amazon Web Services (AWS)",
-      "issueDate": "2014-10-01",
-      "expirationDate": "2016-10-01",
-      "credentialID": "627A796D5FE94E64B8845C4C2C0C4020",
-      "credentialURL": "http://credential.dot.com/627A796D5FE94E64B8845C4C2C0C4020"
-    }
-  ],
+  "certificates": [],
+  "publications": [],
+  "leadership": [],
   "skills": [
-    {
-      "name": "Frontend Development",
-      "level": "Master",
-      "keywords": [
-        "HTML/CSS/Javascript",
-        "Boostrap",
-        "Babel",
-        "React/Redux",
-        "Webpack"
-      ]
-    },
-    {
-      "name": "Backend Development",
-      "level": "Master",
-      "keywords": [
-        "NodeJS",
-        "Golang",
-        "MongoDB",
-        "Postgres",
-        "Redis"
-      ]
-    },
-    {
-      "name": "System Administration",
-      "level": "Master",
-      "keywords": [
-        "AWS",
-        "Linux",
-        "NGINX",
-        "CloudFlare",
-        "Shell",
-        "Docker"
-      ]
-    }
+      {
+          "name": "Current Experience",
+          "level": "",
+          "keywords": [
+              "Java",
+              "Python",
+              "Git",
+              "CI/CD",
+              "Spring Boot",
+              "JUnit",
+              "Cucumber",
+              "Unix"
+          ]
+      },
+      {
+          "name": "Prior Experience",
+          "level": "",
+          "keywords": [
+              "Node.js",
+              "JavaScript",
+              "HTML",
+              "CSS",
+              "ETL",
+              "SQL",
+              "UI/UX Design"
+          ]
+      },
+      {
+          "name": "Engineering",
+          "level": "",
+          "keywords": [
+              "Data Structures",
+              "Algorithms",
+              "Systems Design",
+              "Agile SDLC"
+          ]
+      }
   ],
-  "languages": [
-    {
-      "name": "English",
-      "level": "Native speaker"
-    },
-    {
-      "name": "French",
-      "level": "Proficient"
-    },
-    {
-      "name": "Japanese",
-      "level": "Beginner"
-    }
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "projects": [
+      {
+          "name": "JSON Resume using LinkedIn",
+          "startDate": "",
+          "summary": "Customized a chrome extension to parse data from a LinkedIn profile, generate a custom JSON file, transform the data using a Python script, and build an online resume (hosted on Firebase). Developed and packaged multiple themes on NPM and GitHub Registry. Also created a subdomain name to point to this Firebase function.",
+          "url": "https://github.com/anthonyjdella/customized-linkedin-to-jsonresume"
+      },
+      {
+          "name": "www.AnthonyDellavecchia.com",
+          "startDate": "",
+          "summary": "Developed a website using a static-site generator, Hugo, and a custom domain name for my personal brand. It's deployed and hosted on Firebase & GitHub. It's integrated with my JSON resume project, so you can select a theme and view my resume.",
+          "url": "https://www.anthonydellavecchia.com"
+      },
+      {
+          "name": "Automated Job Scraping",
+          "startDate": "",
+          "summary": "Developed a server-side script with Node.js that automatically searches and scrapes data of job postings from select company websites, then sends a notification to the user.",
+          "url": "https://github.com/anthonyjdella/automated-job-web-scraping"
+      }
   ],
-  "interests": [
-    {
-      "name": "Anime",
-      "keywords": [
-        "Re:Zero",
-        "Steins Gate"
-      ]
-    },
-    {
-      "name": "Movies",
-      "keywords": [
-        "Star Wars",
-        "Lord of the Rings"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Jane Doe <jane.doe@gmail.com>",
-      "reference": "Passionate and hard working man"
-    },
-    {
-      "name": "Don Joe",
-      "reference": "The best employee we could ever have"
-    }
-  ]
+  "meta": {
+      "version": "v1.0.0",
+      "canonical": "https://github.com/anthonyjdella/customized-resume-schema/blob/main/schema.json",
+      "theme": "macchiato"
+  }
 }

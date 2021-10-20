@@ -6,7 +6,7 @@
  * @property {string} endDate Education end date
  * @property {string} area Education area
  * @property {string} studyType Education study type
- * @property {string} gpa Education GPA
+ * @property {string} score Education score
  * @property {array.<string>} courses Education courses
  *
  * [Section] Education
@@ -26,14 +26,14 @@
             <h4 class="strike-through">
               <span><%= e.institution %></span>
               <span class="date">
-                <%= this.prettyDate(e.startDate) %> — <%= this.prettyDate(e.endDate) || 'Now' %>
+                <%= this.onlyYearDate(e.startDate) %> — <%= this.onlyYearDate(e.endDate) || 'Now' %>
               </span>
             </h4>
             <div class="area"><%= e.area %></div>
             <div class="studyType">
               <%= e.studyType %>
-              <% if (e.gpa) { %>
-                (<%= e.gpa %>)
+              <% if (e.score) { %>
+                (<%= e.score %>)
               <% } %>
             </div>
             <% if (e.courses && Array.isArray(e.courses) && e.courses.length > 0 ) { %>

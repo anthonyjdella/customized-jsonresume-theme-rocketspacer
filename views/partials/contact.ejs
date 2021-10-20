@@ -26,7 +26,8 @@
         <% if (contact.phone) { %>
           <div class="col-sm-6">
             <strong>Phone</strong>
-            <div class="phone"><%= contact.phone %></div>
+            <br>
+            <a href="tel:<%= contact.phone %>"><%= contact.phone %></a>
           </div>
         <% } %>
         <% if (contact.website) { %>
@@ -34,6 +35,14 @@
             <strong>Website</strong>
             <div>
               <a target="_blank" href="<%= contact.website %>"><%= contact.website %></a>
+            </div>
+          </div>
+        <% } %>
+        <% if (contact.location.address) { %>
+          <div class="col-sm-6">
+            <strong>Location</strong>
+            <div>
+              <a target="phone"><%= contact.location.address %></a>
             </div>
           </div>
         <% } %>
