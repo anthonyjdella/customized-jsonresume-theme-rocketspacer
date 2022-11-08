@@ -1,0 +1,26 @@
+<% if (writing) { %>
+  <section id="writing" class="row">
+    <aside class="col-sm-2">
+      <h3>Articles</h3>
+    </aside>
+    <div class="col-sm-10">
+      <div class="row">
+        <% writing.forEach((w) => { %>
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <!-- <a target="_blank" href="<%= w.reference %>"><%= w.name %></a> -->
+              <span onclick="window.open('<%= w.reference %>')"><%= w.name %></span>
+              <span class="date">
+                <% if (w.date != 'present') { %>
+                  <%= this.prettyDate(w.date) %>
+                <% } else { %>
+                  <%= this.prettyDate(w.date) %>
+                <% } %>
+              </span>
+            </h4>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+<% } %>

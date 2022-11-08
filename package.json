@@ -1,6 +1,6 @@
 {
   "name": "@anthonyjdella/jsonresume-theme-anthonyjdella-rocketspacer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My (rocketspacer) personal theme for JSON Resume",
   "keywords": [
     "resume",
@@ -21,19 +21,21 @@
     "node": ">= 10.0.0"
   },
   "scripts": {
-    "start": "resume serve --port ${PORT:-4000} --theme rocketspacer",
+    "start": "resume serve --theme .",
+    "build": "mkdir -p public && resume export public/index.html --theme \"$(pwd)\"",
     "lint:js": "eslint --cache --ignore-path .gitignore '**/*.js'",
     "lint:ejs": "ejslint 'views/**/*.ejs'",
     "lint": "npm run lint:js && npm run lint:ejs"
   },
   "dependencies": {
+    "@anthonyjdella/customized-resume-cli": "^1.0.6",
     "ejs": "^3.1.3"
   },
   "devDependencies": {
+    "anthonyjdella-resume-schema": "^1.0.4",
     "ejs-lint": "^1.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "resume-cli": "1.2.3"
+    "eslint-plugin-import": "^2.20.2"
   }
 }
